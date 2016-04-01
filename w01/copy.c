@@ -3,10 +3,12 @@
 #define BSIZE 16384
 
 void main() {
-  int fin, fout;
+  int fin, fout, count;
   char buf[BSIZE];
-  int count;
 
+  /**
+    use make_foo.sh to create file 'foo'
+  **/
   if((fin = open("foo", O_RDONLY)) < 0) {
     perror("foo");
     exit(1);
