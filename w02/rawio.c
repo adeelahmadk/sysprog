@@ -1,4 +1,4 @@
-/* Trivial file copy program using low-level I/O */
+/* File copy program using low-level I/O */
 
 #include <stdio.h>
 #include <fcntl.h>
@@ -32,4 +32,6 @@ int main(int argc, char *argv[])
 
   free(buffer);
   close(fd);
+
+  return 0;
 }
